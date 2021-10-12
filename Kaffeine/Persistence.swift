@@ -13,6 +13,10 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
+        
+        let caffeineItem = CaffeineSummary(context: viewContext)
+        caffeineItem.kaffeineQuantity = 5
+        
         for _ in 0..<10 {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()

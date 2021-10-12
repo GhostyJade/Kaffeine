@@ -16,6 +16,7 @@
 		524B56FE2714066D0053FA49 /* KaffeineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B56FD2714066D0053FA49 /* KaffeineTests.swift */; };
 		524B57082714066D0053FA49 /* KaffeineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B57072714066D0053FA49 /* KaffeineUITests.swift */; };
 		524B570A2714066D0053FA49 /* KaffeineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B57092714066D0053FA49 /* KaffeineUITestsLaunchTests.swift */; };
+		52593CAF2715F28000CF9D53 /* CaffeineConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52593CAE2715F28000CF9D53 /* CaffeineConsumptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		524B57032714066D0053FA49 /* KaffeineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaffeineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524B57072714066D0053FA49 /* KaffeineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaffeineUITests.swift; sourceTree = "<group>"; };
 		524B57092714066D0053FA49 /* KaffeineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaffeineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52593CAE2715F28000CF9D53 /* CaffeineConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineConsumptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		524B56E62714066C0053FA49 /* Kaffeine */ = {
 			isa = PBXGroup;
 			children = (
+				52593CAD2715F24600CF9D53 /* Views */,
 				524B56E72714066C0053FA49 /* KaffeineApp.swift */,
 				524B56E92714066C0053FA49 /* ContentView.swift */,
 				524B56EB2714066D0053FA49 /* Assets.xcassets */,
@@ -131,6 +134,14 @@
 				524B57092714066D0053FA49 /* KaffeineUITestsLaunchTests.swift */,
 			);
 			path = KaffeineUITests;
+			sourceTree = "<group>";
+		};
+		52593CAD2715F24600CF9D53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52593CAE2715F28000CF9D53 /* CaffeineConsumptionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			files = (
 				524B56F12714066D0053FA49 /* Persistence.swift in Sources */,
 				524B56EA2714066C0053FA49 /* ContentView.swift in Sources */,
+				52593CAF2715F28000CF9D53 /* CaffeineConsumptionView.swift in Sources */,
 				524B56F42714066D0053FA49 /* Kaffeine.xcdatamodeld in Sources */,
 				524B56E82714066C0053FA49 /* KaffeineApp.swift in Sources */,
 			);
