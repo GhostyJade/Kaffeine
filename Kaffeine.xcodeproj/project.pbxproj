@@ -18,6 +18,11 @@
 		524B570A2714066D0053FA49 /* KaffeineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B57092714066D0053FA49 /* KaffeineUITestsLaunchTests.swift */; };
 		52593CAF2715F28000CF9D53 /* CaffeineConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52593CAE2715F28000CF9D53 /* CaffeineConsumptionView.swift */; };
 		52593CB32716165100CF9D53 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52593CB22716165100CF9D53 /* HealthKit.framework */; };
+		528695552716A85900CBE3DE /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528695542716A85900CBE3DE /* HealthKitHelper.swift */; };
+		528695582716BAC900CBE3DE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528695572716BAC900CBE3DE /* WelcomeView.swift */; };
+		5286955A2716BAFB00CBE3DE /* WelcomeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528695592716BAFB00CBE3DE /* WelcomeItemView.swift */; };
+		5286955C2716F3DA00CBE3DE /* WelcomeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286955B2716F3DA00CBE3DE /* WelcomeContainerView.swift */; };
+		5286955E2716F47000CBE3DE /* WelcomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286955D2716F47000CBE3DE /* WelcomeTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		52593CAE2715F28000CF9D53 /* CaffeineConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineConsumptionView.swift; sourceTree = "<group>"; };
 		52593CB02716165100CF9D53 /* Kaffeine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kaffeine.entitlements; sourceTree = "<group>"; };
 		52593CB22716165100CF9D53 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		528695542716A85900CBE3DE /* HealthKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
+		528695572716BAC900CBE3DE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		528695592716BAFB00CBE3DE /* WelcomeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeItemView.swift; sourceTree = "<group>"; };
+		5286955B2716F3DA00CBE3DE /* WelcomeContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeContainerView.swift; sourceTree = "<group>"; };
+		5286955D2716F47000CBE3DE /* WelcomeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,7 @@
 				524B56F02714066D0053FA49 /* Persistence.swift */,
 				524B56F22714066D0053FA49 /* Kaffeine.xcdatamodeld */,
 				524B56ED2714066D0053FA49 /* Preview Content */,
+				528695542716A85900CBE3DE /* HealthKitHelper.swift */,
 			);
 			path = Kaffeine;
 			sourceTree = "<group>";
@@ -145,7 +156,9 @@
 		52593CAD2715F24600CF9D53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				528695562716BAB100CBE3DE /* Welcome */,
 				52593CAE2715F28000CF9D53 /* CaffeineConsumptionView.swift */,
+				528695572716BAC900CBE3DE /* WelcomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +169,16 @@
 				52593CB22716165100CF9D53 /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528695562716BAB100CBE3DE /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				528695592716BAFB00CBE3DE /* WelcomeItemView.swift */,
+				5286955B2716F3DA00CBE3DE /* WelcomeContainerView.swift */,
+				5286955D2716F47000CBE3DE /* WelcomeTitleView.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,11 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5286955E2716F47000CBE3DE /* WelcomeTitleView.swift in Sources */,
 				524B56F12714066D0053FA49 /* Persistence.swift in Sources */,
 				524B56EA2714066C0053FA49 /* ContentView.swift in Sources */,
 				52593CAF2715F28000CF9D53 /* CaffeineConsumptionView.swift in Sources */,
 				524B56F42714066D0053FA49 /* Kaffeine.xcdatamodeld in Sources */,
+				528695552716A85900CBE3DE /* HealthKitHelper.swift in Sources */,
+				5286955C2716F3DA00CBE3DE /* WelcomeContainerView.swift in Sources */,
 				524B56E82714066C0053FA49 /* KaffeineApp.swift in Sources */,
+				5286955A2716BAFB00CBE3DE /* WelcomeItemView.swift in Sources */,
+				528695582716BAC900CBE3DE /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct CaffeineConsumptionView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -38,6 +39,13 @@ struct CaffeineConsumptionView: View {
                     Label("Add Item", systemImage: "plus")
                 }
             }
+        }
+        .onAppear{self.load()}
+    }
+    
+    private func load() -> Void {
+        if HKHealthStore.isHealthDataAvailable() {
+            
         }
     }
     
