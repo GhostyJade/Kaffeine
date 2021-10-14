@@ -4,10 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Kaffeine (Release).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Kaffeine.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>KaffeineWidgetExtensionExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>524B56E32714066C0053FA49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>524B56F82714066D0053FA49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>524B57022714066D0053FA49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>528695622717400800CBE3DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5217401E2718BC18007AA819 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217401D2718BC18007AA819 /* Extensions.swift */; };
+		5217401F2718BD00007AA819 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217401D2718BC18007AA819 /* Extensions.swift */; };
 		524B56E82714066C0053FA49 /* KaffeineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B56E72714066C0053FA49 /* KaffeineApp.swift */; };
 		524B56EA2714066C0053FA49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B56E92714066C0053FA49 /* ContentView.swift */; };
 		524B56EC2714066D0053FA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524B56EB2714066D0053FA49 /* Assets.xcassets */; };
@@ -23,6 +25,16 @@
 		5286955A2716BAFB00CBE3DE /* WelcomeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528695592716BAFB00CBE3DE /* WelcomeItemView.swift */; };
 		5286955C2716F3DA00CBE3DE /* WelcomeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286955B2716F3DA00CBE3DE /* WelcomeContainerView.swift */; };
 		5286955E2716F47000CBE3DE /* WelcomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286955D2716F47000CBE3DE /* WelcomeTitleView.swift */; };
+		528695652717400800CBE3DE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528695642717400800CBE3DE /* WidgetKit.framework */; };
+		528695672717400800CBE3DE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528695662717400800CBE3DE /* SwiftUI.framework */; };
+		5286956A2717400800CBE3DE /* KaffeineWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528695692717400800CBE3DE /* KaffeineWidgetExtension.swift */; };
+		5286956D2717400A00CBE3DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5286956C2717400A00CBE3DE /* Assets.xcassets */; };
+		5286956F2717400A00CBE3DE /* KaffeineWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5286956B2717400800CBE3DE /* KaffeineWidgetExtension.intentdefinition */; };
+		528695702717400A00CBE3DE /* KaffeineWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5286956B2717400800CBE3DE /* KaffeineWidgetExtension.intentdefinition */; };
+		528695732717400A00CBE3DE /* KaffeineWidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 528695632717400800CBE3DE /* KaffeineWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		528F47CE27180AAF00AF584E /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528695542716A85900CBE3DE /* HealthKitHelper.swift */; };
+		52ACC1DE27175EE7008D0AAD /* CaffeineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACC1DD27175EE7008D0AAD /* CaffeineModel.swift */; };
+		52ACC1DF27175EE7008D0AAD /* CaffeineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACC1DD27175EE7008D0AAD /* CaffeineModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +52,31 @@
 			remoteGlobalIDString = 524B56E32714066C0053FA49;
 			remoteInfo = Kaffeine;
 		};
+		528695712717400A00CBE3DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524B56DC2714066C0053FA49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 528695622717400800CBE3DE;
+			remoteInfo = KaffeineWidgetExtensionExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		528695772717400A00CBE3DE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				528695732717400A00CBE3DE /* KaffeineWidgetExtensionExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5217401D2718BC18007AA819 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		524B56E42714066C0053FA49 /* Kaffeine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaffeine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524B56E72714066C0053FA49 /* KaffeineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaffeineApp.swift; sourceTree = "<group>"; };
 		524B56E92714066C0053FA49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +97,14 @@
 		528695592716BAFB00CBE3DE /* WelcomeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeItemView.swift; sourceTree = "<group>"; };
 		5286955B2716F3DA00CBE3DE /* WelcomeContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeContainerView.swift; sourceTree = "<group>"; };
 		5286955D2716F47000CBE3DE /* WelcomeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTitleView.swift; sourceTree = "<group>"; };
+		528695632717400800CBE3DE /* KaffeineWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KaffeineWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		528695642717400800CBE3DE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		528695662717400800CBE3DE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		528695692717400800CBE3DE /* KaffeineWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaffeineWidgetExtension.swift; sourceTree = "<group>"; };
+		5286956B2717400800CBE3DE /* KaffeineWidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = KaffeineWidgetExtension.intentdefinition; sourceTree = "<group>"; };
+		5286956C2717400A00CBE3DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5286956E2717400A00CBE3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52ACC1DD27175EE7008D0AAD /* CaffeineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,15 +130,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		528695602717400800CBE3DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528695672717400800CBE3DE /* SwiftUI.framework in Frameworks */,
+				528695652717400800CBE3DE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5217401C2718BC09007AA819 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5217401D2718BC18007AA819 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		524B56DB2714066C0053FA49 = {
 			isa = PBXGroup;
 			children = (
 				524B56E62714066C0053FA49 /* Kaffeine */,
 				524B56FC2714066D0053FA49 /* KaffeineTests */,
 				524B57062714066D0053FA49 /* KaffeineUITests */,
+				528695682717400800CBE3DE /* KaffeineWidgetExtension */,
 				524B56E52714066C0053FA49 /* Products */,
 				52593CB12716165100CF9D53 /* Frameworks */,
 			);
@@ -108,6 +168,7 @@
 				524B56E42714066C0053FA49 /* Kaffeine.app */,
 				524B56F92714066D0053FA49 /* KaffeineTests.xctest */,
 				524B57032714066D0053FA49 /* KaffeineUITests.xctest */,
+				528695632717400800CBE3DE /* KaffeineWidgetExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +176,7 @@
 		524B56E62714066C0053FA49 /* Kaffeine */ = {
 			isa = PBXGroup;
 			children = (
+				5217401C2718BC09007AA819 /* Utils */,
 				52593CB02716165100CF9D53 /* Kaffeine.entitlements */,
 				52593CAD2715F24600CF9D53 /* Views */,
 				524B56E72714066C0053FA49 /* KaffeineApp.swift */,
@@ -167,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				52593CB22716165100CF9D53 /* HealthKit.framework */,
+				528695642717400800CBE3DE /* WidgetKit.framework */,
+				528695662717400800CBE3DE /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,6 +245,26 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		528695682717400800CBE3DE /* KaffeineWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5286957827175DAD00CBE3DE /* Model */,
+				528695692717400800CBE3DE /* KaffeineWidgetExtension.swift */,
+				5286956B2717400800CBE3DE /* KaffeineWidgetExtension.intentdefinition */,
+				5286956C2717400A00CBE3DE /* Assets.xcassets */,
+				5286956E2717400A00CBE3DE /* Info.plist */,
+			);
+			path = KaffeineWidgetExtension;
+			sourceTree = "<group>";
+		};
+		5286957827175DAD00CBE3DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52ACC1DD27175EE7008D0AAD /* CaffeineModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,10 +275,12 @@
 				524B56E02714066C0053FA49 /* Sources */,
 				524B56E12714066C0053FA49 /* Frameworks */,
 				524B56E22714066C0053FA49 /* Resources */,
+				528695772717400A00CBE3DE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				528695722717400A00CBE3DE /* PBXTargetDependency */,
 			);
 			name = Kaffeine;
 			productName = Kaffeine;
@@ -237,6 +323,23 @@
 			productReference = 524B57032714066D0053FA49 /* KaffeineUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		528695622717400800CBE3DE /* KaffeineWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528695742717400A00CBE3DE /* Build configuration list for PBXNativeTarget "KaffeineWidgetExtensionExtension" */;
+			buildPhases = (
+				5286955F2717400800CBE3DE /* Sources */,
+				528695602717400800CBE3DE /* Frameworks */,
+				528695612717400800CBE3DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaffeineWidgetExtensionExtension;
+			productName = KaffeineWidgetExtensionExtension;
+			productReference = 528695632717400800CBE3DE /* KaffeineWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -258,6 +361,9 @@
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 524B56E32714066C0053FA49;
 					};
+					528695622717400800CBE3DE = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = 524B56DF2714066C0053FA49 /* Build configuration list for PBXProject "Kaffeine" */;
@@ -276,6 +382,7 @@
 				524B56E32714066C0053FA49 /* Kaffeine */,
 				524B56F82714066D0053FA49 /* KaffeineTests */,
 				524B57022714066D0053FA49 /* KaffeineUITests */,
+				528695622717400800CBE3DE /* KaffeineWidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -304,6 +411,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		528695612717400800CBE3DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5286956D2717400A00CBE3DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -319,6 +434,9 @@
 				528695552716A85900CBE3DE /* HealthKitHelper.swift in Sources */,
 				5286955C2716F3DA00CBE3DE /* WelcomeContainerView.swift in Sources */,
 				524B56E82714066C0053FA49 /* KaffeineApp.swift in Sources */,
+				5217401E2718BC18007AA819 /* Extensions.swift in Sources */,
+				52ACC1DE27175EE7008D0AAD /* CaffeineModel.swift in Sources */,
+				528695702717400A00CBE3DE /* KaffeineWidgetExtension.intentdefinition in Sources */,
 				5286955A2716BAFB00CBE3DE /* WelcomeItemView.swift in Sources */,
 				528695582716BAC900CBE3DE /* WelcomeView.swift in Sources */,
 			);
@@ -341,6 +459,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5286955F2717400800CBE3DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5217401F2718BD00007AA819 /* Extensions.swift in Sources */,
+				5286956A2717400800CBE3DE /* KaffeineWidgetExtension.swift in Sources */,
+				5286956F2717400A00CBE3DE /* KaffeineWidgetExtension.intentdefinition in Sources */,
+				528F47CE27180AAF00AF584E /* HealthKitHelper.swift in Sources */,
+				52ACC1DF27175EE7008D0AAD /* CaffeineModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -353,6 +483,11 @@
 			isa = PBXTargetDependency;
 			target = 524B56E32714066C0053FA49 /* Kaffeine */;
 			targetProxy = 524B57042714066D0053FA49 /* PBXContainerItemProxy */;
+		};
+		528695722717400A00CBE3DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 528695622717400800CBE3DE /* KaffeineWidgetExtensionExtension */;
+			targetProxy = 528695712717400A00CBE3DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -476,6 +611,7 @@
 		524B570E2714066D0053FA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Kaffeine/Kaffeine.entitlements;
@@ -485,6 +621,8 @@
 				DEVELOPMENT_TEAM = F6T9LJJA75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Kaffeine will read your caffeine consumption";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Kaffeine will store your caffeine consumption data to Health App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -500,13 +638,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		524B570F2714066D0053FA49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Kaffeine/Kaffeine.entitlements;
@@ -516,6 +655,8 @@
 				DEVELOPMENT_TEAM = F6T9LJJA75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Kaffeine will read your caffeine consumption";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Kaffeine will store your caffeine consumption data to Health App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -531,7 +672,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -631,6 +772,60 @@
 			};
 			name = Release;
 		};
+		528695752717400A00CBE3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6T9LJJA75;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KaffeineWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KaffeineWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostyjade.Kaffeine.KaffeineWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		528695762717400A00CBE3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6T9LJJA75;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KaffeineWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KaffeineWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostyjade.Kaffeine.KaffeineWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -666,6 +861,15 @@
 			buildConfigurations = (
 				524B57142714066D0053FA49 /* Debug */,
 				524B57152714066D0053FA49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528695742717400A00CBE3DE /* Build configuration list for PBXNativeTarget "KaffeineWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528695752717400A00CBE3DE /* Debug */,
+				528695762717400A00CBE3DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

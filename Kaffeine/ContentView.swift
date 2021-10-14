@@ -13,6 +13,8 @@ struct ContentView: View {
     
     @State private var isKaffeinDetailsShown : Bool = false
     
+    private let helper = HealthKitHelper.shared
+    
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \CaffeineSummary.kaffeineQuantity, ascending: true)], animation: .default)
     private var caffeine : FetchedResults<CaffeineSummary>
     
@@ -30,18 +32,16 @@ struct ContentView: View {
                         }
                         Divider()
                         HStack{
-                            Text(getString(value: caffeine.first?.kaffeineQuantity ?? 0))
+                            Text((caffeine.first?.kaffeineQuantity ?? 0).getString())
                             Text("cups")
                             Spacer()
                         }
                     }
                 }
             }.navigationTitle("Summary")
-        }
-    }
-    
-    func getString(value: Int64) -> String {
-        return String(value)
+        }.onAppear(perform:{
+//            helper.requestPermissions()
+        })
     }
     
     private func openKaffeineDetails(){
