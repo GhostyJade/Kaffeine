@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5217401E2718BC18007AA819 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217401D2718BC18007AA819 /* Extensions.swift */; };
 		5217401F2718BD00007AA819 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217401D2718BC18007AA819 /* Extensions.swift */; };
+		52486E572719EB81007D6A25 /* ItemCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52486E562719EB81007D6A25 /* ItemCreationView.swift */; };
+		52486E5A2719EBC1007D6A25 /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52486E592719EBC1007D6A25 /* GridItemView.swift */; };
 		524B56E82714066C0053FA49 /* KaffeineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B56E72714066C0053FA49 /* KaffeineApp.swift */; };
 		524B56EA2714066C0053FA49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B56E92714066C0053FA49 /* ContentView.swift */; };
 		524B56EC2714066D0053FA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524B56EB2714066D0053FA49 /* Assets.xcassets */; };
@@ -20,6 +22,7 @@
 		524B570A2714066D0053FA49 /* KaffeineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B57092714066D0053FA49 /* KaffeineUITestsLaunchTests.swift */; };
 		52593CAF2715F28000CF9D53 /* CaffeineConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52593CAE2715F28000CF9D53 /* CaffeineConsumptionView.swift */; };
 		52593CB32716165100CF9D53 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52593CB22716165100CF9D53 /* HealthKit.framework */; };
+		525A900627231C0F00263BB4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A900527231C0F00263BB4 /* Colors.swift */; };
 		528695552716A85900CBE3DE /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528695542716A85900CBE3DE /* HealthKitHelper.swift */; };
 		528695582716BAC900CBE3DE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528695572716BAC900CBE3DE /* WelcomeView.swift */; };
 		5286955A2716BAFB00CBE3DE /* WelcomeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528695592716BAFB00CBE3DE /* WelcomeItemView.swift */; };
@@ -77,6 +80,8 @@
 
 /* Begin PBXFileReference section */
 		5217401D2718BC18007AA819 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		52486E562719EB81007D6A25 /* ItemCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCreationView.swift; sourceTree = "<group>"; };
+		52486E592719EBC1007D6A25 /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		524B56E42714066C0053FA49 /* Kaffeine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaffeine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524B56E72714066C0053FA49 /* KaffeineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaffeineApp.swift; sourceTree = "<group>"; };
 		524B56E92714066C0053FA49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +97,7 @@
 		52593CAE2715F28000CF9D53 /* CaffeineConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineConsumptionView.swift; sourceTree = "<group>"; };
 		52593CB02716165100CF9D53 /* Kaffeine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kaffeine.entitlements; sourceTree = "<group>"; };
 		52593CB22716165100CF9D53 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		525A900527231C0F00263BB4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		528695542716A85900CBE3DE /* HealthKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
 		528695572716BAC900CBE3DE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		528695592716BAFB00CBE3DE /* WelcomeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeItemView.swift; sourceTree = "<group>"; };
@@ -146,8 +152,18 @@
 			isa = PBXGroup;
 			children = (
 				5217401D2718BC18007AA819 /* Extensions.swift */,
+				525A900527231C0F00263BB4 /* Colors.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		52486E582719EBAF007D6A25 /* ItemCreation */ = {
+			isa = PBXGroup;
+			children = (
+				52486E562719EB81007D6A25 /* ItemCreationView.swift */,
+				52486E592719EBC1007D6A25 /* GridItemView.swift */,
+			);
+			path = ItemCreation;
 			sourceTree = "<group>";
 		};
 		524B56DB2714066C0053FA49 = {
@@ -218,6 +234,7 @@
 		52593CAD2715F24600CF9D53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52486E582719EBAF007D6A25 /* ItemCreation */,
 				528695562716BAB100CBE3DE /* Welcome */,
 				52593CAE2715F28000CF9D53 /* CaffeineConsumptionView.swift */,
 				528695572716BAC900CBE3DE /* WelcomeView.swift */,
@@ -430,10 +447,13 @@
 				524B56F12714066D0053FA49 /* Persistence.swift in Sources */,
 				524B56EA2714066C0053FA49 /* ContentView.swift in Sources */,
 				52593CAF2715F28000CF9D53 /* CaffeineConsumptionView.swift in Sources */,
+				52486E5A2719EBC1007D6A25 /* GridItemView.swift in Sources */,
 				524B56F42714066D0053FA49 /* Kaffeine.xcdatamodeld in Sources */,
 				528695552716A85900CBE3DE /* HealthKitHelper.swift in Sources */,
 				5286955C2716F3DA00CBE3DE /* WelcomeContainerView.swift in Sources */,
 				524B56E82714066C0053FA49 /* KaffeineApp.swift in Sources */,
+				525A900627231C0F00263BB4 /* Colors.swift in Sources */,
+				52486E572719EB81007D6A25 /* ItemCreationView.swift in Sources */,
 				5217401E2718BC18007AA819 /* Extensions.swift in Sources */,
 				52ACC1DE27175EE7008D0AAD /* CaffeineModel.swift in Sources */,
 				528695702717400A00CBE3DE /* KaffeineWidgetExtension.intentdefinition in Sources */,

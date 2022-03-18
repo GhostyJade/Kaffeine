@@ -27,8 +27,9 @@ struct CaffeineConsumptionView: View {
                     }
                 }
                 .onDelete(perform: deleteItems)
-            }.navigationTitle("Caffeine")
+            }
         }
+        .navigationTitle("Caffeine")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 EditButton()

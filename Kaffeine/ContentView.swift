@@ -20,7 +20,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List{
+            List {
                 Button(action: openKaffeineDetails){
                     NavigationLink(destination: CaffeineConsumptionView(),isActive: $isKaffeinDetailsShown){EmptyView()}.hidden()
                     VStack{
